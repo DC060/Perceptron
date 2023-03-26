@@ -37,6 +37,17 @@ def random_weights(features_count):
     return weights
 
 
+def perceptron(data, labels, w_weight, learning_const):
+    sum = 0
+    #for data in data:
+        #for x, w in zip(data, w_weight):
+
+
+    if sum > 0:
+        return 1
+    else:
+        return 0
+
 
 if __name__ == '__main__':
 
@@ -45,5 +56,11 @@ if __name__ == '__main__':
     features_count = len(train_data[0])
     class_count = len(count_classes(train_labels))
     weights = random_weights(features_count)
+
     learning_const = 0.01
+    threshold = 0.5
+    output = perceptron(train_data, train_labels, weights, learning_const)
+    print("output: " + str(output))
+
+
 
