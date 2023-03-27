@@ -51,7 +51,7 @@ def random_weights(features_count):
 
 
 def training_perceptron(data, labels, weights, learning_const, epochs):
-    threshold = 0
+    threshold = random.random()
 
     for epoch in range(epochs):
         for i in range(len(data)):
